@@ -1,0 +1,7 @@
+<svg id="コンポーネント_8" data-name="コンポーネント 8" xmlns="http://www.w3.org/2000/svg" width="300" height="46" viewBox="0 0 300 46">
+  <g id="長方形_5" data-name="長方形 5" transform="translate(0 11)" fill="none" stroke="#9a97f0" stroke-linejoin="round" stroke-width="1">
+    <rect width="300" height="35" rx="3" stroke="none"/>
+    <rect x="0.5" y="0.5" width="299" height="34" rx="2.5" fill="none"/>
+  </g>
+  <text id="RegExp" transform="translate(0 7)" fill="#7e7b7b" font-size="9" font-family="Helvetica"><tspan x="0" y="0">RegExp</tspan></text>
+</svg>
