@@ -29,7 +29,6 @@ const TextBox = styled.div`
     width: 100%;
     height: 20px;
     margin: auto 0;
-    overflow: scroll;
 `;
 
 const ListBox:(props:{fileName:string})=>JSX.Element = ({fileName}) =>{
