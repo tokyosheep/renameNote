@@ -43,4 +43,4 @@ export const renameAndMove:(file:FileType,folder:string,regExpPattern:string,rep
             alert(`${file.name} isn't able to be renamed`);
             return false;
         }
-    }
+}
