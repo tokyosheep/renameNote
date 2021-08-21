@@ -90,7 +90,7 @@ export const SettingCompo = {
         width: 100%;
         height: 100%;
         top: 0;
-        left: ${props=>props.switchOn ? 0 : -100}%;
+        left: ${props=>props.switchOn ? 0 : -120}%;
         display: grid;
         grid-template-rows: 60px 410px 30px;
         grid-template-columns: 550px 250px;

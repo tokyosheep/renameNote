@@ -13,6 +13,7 @@ export const centerPlaced = css<{add?:string,y?:number,x?:number}>`
     transform: ${props=> `translate(${props.x || "-50"}%,${props.y || "-50"}%)` + (props.add || "")};
 `;
 
+/*
 export const ScrollBar = css`
     &::-webkit-scrollbar{
             width: 5px;
@@ -27,3 +28,4 @@ export const ScrollBar = css`
         box-shadow:0 0 0 1px rgba(255, 255, 255, .3);
     }
 `;
+*/

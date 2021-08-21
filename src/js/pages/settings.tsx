@@ -13,7 +13,7 @@ import StateType from "../redux/stateType";
 const SettingsCompo = () =>{
     const mode = useSelector((state:StateType)=>state.windowMode);
     return(
-        <Container switchOn={mode==="create"}>
+        <Container switchOn={mode==="create"} >
             <Header />
             <SettingMainOptions />
             <AsidePresets />
