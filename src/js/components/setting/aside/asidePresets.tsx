@@ -12,7 +12,7 @@ import ListBox from "./listBox";
 const ListBoxWrapper = styled.ul`
     list-style: none;
     padding: 0;
-    overflow: scroll;
+    overflow: hidden;
     margin: 0px;
 `;
 

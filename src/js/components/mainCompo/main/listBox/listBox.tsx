@@ -1,8 +1,9 @@
+import { rgba } from "polished";
 import * as React from "react";
 import styled from "styled-components";
 import { TextColor } from "../../../../styles/commonValue";
 
-const ListBoxStyle = styled.li`
+const ListBoxStyle = styled.li<{isRepetition:boolean}>`
     padding: 0;
     width: 100%;
     height: 30px;
@@ -12,6 +13,8 @@ const ListBoxStyle = styled.li`
     justify-content: flex-start;
     gap:3px;
     box-sizing: border-box;
+    overflow: hidden;
+    background: ${props=>props.isRepetition ? "#f55" : rgba(0,0,0,0)};
 `;
 
 const Circle = styled.div`
@@ -31,9 +34,9 @@ const TextBox = styled.div`
     margin: auto 0;
 `;
 
-const ListBox:(props:{fileName:string})=>JSX.Element = ({fileName}) =>{
+const ListBox:(props:{fileName:string,isRepetition:boolean})=>JSX.Element = ({fileName,isRepetition}) =>{
     return(
-        <ListBoxStyle>
+        <ListBoxStyle isRepetition={isRepetition}>
             <Circle></Circle>
             <TextBox>
                 {fileName}

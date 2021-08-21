@@ -4,7 +4,7 @@ const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 
 let mainWindow;
-const debug = true;
+const debug = false;
 
 app.on("ready",()=>{
     let factor = screen.getPrimaryDisplay().scaleFactor;
@@ -12,10 +12,12 @@ app.on("ready",()=>{
     const width = (800 + (debug ? 220 : 0))-(800 + (debug ? 220 : 0))*0.05;
     const height = 500 - 500*0.05
     mainWindow = new BrowserWindow({
+        minHeight:height,
+        minWidth:width,
         width:width,
         height:height,
-        maxWidth:width,
-        maxHeight:height,
+        maxWidth:width+100,
+        maxHeight:height+100,
         useContentSize: true,
         webPreferences:{
             nodeIntegration: true,

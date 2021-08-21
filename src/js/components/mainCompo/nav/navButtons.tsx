@@ -2,7 +2,6 @@ import * as React from "react";
 import { useCallback } from "react";
 import { useSelector , useDispatch } from "react-redux";
 import { windowMode_set } from "../../../redux/action/windowAction";
-import styled from "styled-components";
 import StateType from "../../../redux/stateType";
 import { MainPage } from "../../../styles/container";
 const { NavCompo } = MainPage;

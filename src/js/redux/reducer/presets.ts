@@ -24,7 +24,7 @@ export const presets:PresetReducer = (state=initPresets,action)=>{
         case "preset_overWrite":
             const index = state.findIndex(s=> s.checked);
             state[index] = {...action.preset};
-            return {...state};
+            return [...state];
 
         case "preset_check":
             console.log(state);

@@ -7113,17 +7113,19 @@ __webpack_require__.r(__webpack_exports__);
 var app = (electron__WEBPACK_IMPORTED_MODULE_0___default().app);
 var BrowserWindow = (electron__WEBPACK_IMPORTED_MODULE_0___default().BrowserWindow);
 var mainWindow;
-var debug = true;
+var debug = false;
 app.on("ready", function () {
   var factor = electron__WEBPACK_IMPORTED_MODULE_0__.screen.getPrimaryDisplay().scaleFactor;
   console.log(factor);
   var width = 800 + (debug ? 220 : 0) - (800 + (debug ? 220 : 0)) * 0.05;
   var height = 500 - 500 * 0.05;
   mainWindow = new BrowserWindow({
+    minHeight: height,
+    minWidth: width,
     width: width,
     height: height,
-    maxWidth: width,
-    maxHeight: height,
+    maxWidth: width + 100,
+    maxHeight: height + 100,
     useContentSize: true,
     webPreferences: {
       nodeIntegration: true,

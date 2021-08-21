@@ -1,4 +1,4 @@
-const initDummy = "junkojunko1616999";
+const initDummy = "francois1616999";
 
 export type DummyAction = {type:"dummyText_set",value:string};
 

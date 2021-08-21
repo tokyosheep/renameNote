@@ -63,7 +63,7 @@ export const PresetSideBar = {
     padding: 0;
     margin: 0;
     list-style: none;
-    overflow: scroll;
+    overflow: hidden;
     `,
     HeaderCompo:styled.header`
         position: relative;
@@ -116,7 +116,7 @@ export const SettingCompo = {
     AsideListCompo:styled.aside`
         grid-area: aside;
         background: #331D6E;
-        overflow: scroll;
+        overflow: hidden;
     `,
     FooterCompo:styled.footer`
         grid-area: footer;

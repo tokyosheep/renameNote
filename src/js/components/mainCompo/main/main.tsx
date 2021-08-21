@@ -77,10 +77,18 @@ const Main:(props:{onDrop:DropFunc})=>JSX.Element = ({onDrop}) =>{
     const replace = useSelector((state:StateType)=>state.replace);
     const options = useSelector((state:StateType)=>state.regExpOptions);
     const droppedList = useSelector((state:StateType)=>state.droppedFiles);
-    const fileList = droppedList.map((file,index)=><ListBox key={index} fileName={file.name}/>);
-    const renamedList = droppedList.map((file,index)=>{
-        return <ListBox key={index} fileName={replaceText(file.name,regExp,replace,options.ignore,options.global)}/>
+    const fileList = droppedList.map((file,index)=><ListBox key={index} fileName={file.name} isRepetition={false}/>);
+    const renamedFiles = droppedList.map(file=>replaceText(file.name,regExp,replace,options.ignore,options.global));
+    console.log(renamedFiles);
+    const repetitionList = Array.from(new Set(renamedFiles)).filter(file=>{
+        const count = renamedFiles.reduce((acc,current)=>{
+            if(current === file)acc++;
+            return acc;
+        },0);
+        return count > 1;
     });
+    console.log(repetitionList);
+    const renamedList = renamedFiles.map((file,index)=><ListBox key={index} fileName={file} isRepetition={repetitionList.some(name=>name===file)}/>);
     const [{canDrop,isOver},drop] = useDrop({
         accept:[NativeTypes.FILE],
         drop(item,monitor){

@@ -2,8 +2,6 @@ import * as React from "react";
 import { useSelector , useDispatch } from "react-redux";
 import { useCallback } from "react";
 import styled from "styled-components";
-import { rgba } from "polished";
-import { PresetType } from "../../../redux/stateType";
 import StateType from "../../../redux/stateType";
 
 
@@ -37,7 +35,6 @@ const TextBlock = styled.div`
 
 const PresetBox:(props:{name:string})=>JSX.Element = ({name}) =>{
     const dispatch = useDispatch();
-    const mode = useSelector((state:StateType)=>state.windowMode);
     const presets = useSelector((state:StateType)=>state.presets);
     const loadPreset:(presets:PresetRadioType[],name:string)=>void = useCallback((presets,name)=>{
         const selected = presets.find(p=> p.name===name);
