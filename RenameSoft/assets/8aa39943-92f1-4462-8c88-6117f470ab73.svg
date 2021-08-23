@@ -1,8 +1,0 @@
-<svg id="TextBox" xmlns="http://www.w3.org/2000/svg" width="300" height="45" viewBox="0 0 300 45">
-  <g id="長方形_11" data-name="長方形 11" transform="translate(0 10)" fill="#dbdbdb" stroke="#707070" stroke-width="1">
-    <rect width="300" height="35" rx="5" stroke="none"/>
-    <rect x="0.5" y="0.5" width="299" height="34" rx="4.5" fill="none"/>
-  </g>
-  <path id="folder" d="M25.842,67.564H15.149L11.584,64H2.673A2.673,2.673,0,0,0,0,66.673v16.04a2.673,2.673,0,0,0,2.673,2.673H25.842a2.673,2.673,0,0,0,2.673-2.673V70.238A2.673,2.673,0,0,0,25.842,67.564Z" transform="translate(7 -47)" fill="rgba(0,0,0,0.6)"/>
-  <text id="Export" transform="translate(0 8)" fill="#7e7b7b" font-size="10" font-family="Helvetica"><tspan x="0" y="0">Export</tspan></text>
-</svg>

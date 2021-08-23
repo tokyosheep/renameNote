@@ -2,12 +2,12 @@
   "name": "renameNote",
   "version": "1.0.0",
   "description": "",
-  "build":{
-    "appId":"renameNote",
-    "mac":{
+  "build": {
+    "appId": "renameNote",
+    "mac": {
       "icon": "./icon/icons/mac/icon.icns"
     },
-    "win":{
+    "win": {
       "icon": ".icon/icons/win/icon.ico"
     }
   },
@@ -63,7 +63,6 @@
   "dependencies": {
     "chokidar": "^3.5.2",
     "electron-store": "^8.0.0",
-    "fsevents": "^2.3.2",
-    "style-dictionary": "^3.0.1"
+    "fsevents": "^2.3.2"
   }
 }
