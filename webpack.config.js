@@ -1,7 +1,7 @@
 "use strict";
 const mode = "production";
 const TerserPlugin = require("terser-webpack-plugin");
-const enabledSourceMap = mode === "production";
+const enabledSourceMap = mode === "development";
 const path = require("path");
 
 module.exports = [{
@@ -63,7 +63,6 @@ module.exports = [{
   },{
     mode: mode,
     devtool:"source-map",
-    /*
     optimization:{
       minimize: !enabledSourceMap,
       minimizer:[
@@ -77,7 +76,6 @@ module.exports = [{
           }),
       ],
     },
-    */
     target: "electron-main",
     // メインとなるJavaScriptファイル（エントリーポイント）
     entry: "./mainProcess/index.ts",

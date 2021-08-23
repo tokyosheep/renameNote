@@ -1,1 +1,1254 @@
+/* ATTEMPTIFY */
+
+/* CONSTS */
+
+/* EXPORT */
+
+/* FS HANDLERS */
+
+/* IMPORT */
+
+/* INIT */
+
+/* Ignore maximum versions */
+
+/* LANG */
+
+/* RETRYIFY */
+
+/* RETRYIFY QUEUE */
+
+/* SCHEDULER */
+
+/* VARIABLES */
+
+/* fallthrough */
+
+/* istanbul ignore if */
+
+/* istanbul ignore next */
+
+/* module decorator */
+
+/* no condition */
+
+/* no final expression */
+
+/* no initialization */
+
+/*#__PURE__*/
+
+/**
+    Check if an item exists.
+
+    @param key - The key of the item to check.
+    */
+
+/**
+    Delete all items.
+
+    This resets known items to their default values, if defined by the `defaults` or `schema` option.
+    */
+
+/**
+    Delete an item.
+
+    @param key - The key of the item to delete.
+    */
+
+/**
+    Reset items to their default values, as defined by the `defaults` or `schema` option.
+
+    @see `clear()` to reset all items.
+
+    @param keys - The keys of the items to reset.
+    */
+
+/**
+    Watches the given `key`, calling `callback` on any changes.
+
+    @param key - The key wo watch.
+    @param callback - A callback function that is called on any changes. When a `key` is first set `oldValue` will be `undefined`, and when a key is deleted `newValue` will be `undefined`.
+    @returns A function, that when called, will unsubscribe.
+    */
+
+/**
+    Watches the whole config object, calling `callback` on any changes.
+
+    @param callback - A callback function that is called on any changes. When a `key` is first set `oldValue` will be `undefined`, and when a key is deleted `newValue` will be `undefined`.
+    @returns A function, that when called, will unsubscribe.
+    */
+
+/**
+  * A string representing the current Punycode.js version number.
+  * @memberOf punycode
+  * @type String
+  */
+
+/**
+  * An object of methods to convert from JavaScript's internal character
+  * representation (UCS-2) to Unicode code points, and back.
+  * @see <https://mathiasbynens.be/notes/javascript-encoding>
+  * @memberOf punycode
+  * @type Object
+  */
+
+/**
+ * A generic `Array#map` utility function.
+ * @private
+ * @param {Array} array The array to iterate over.
+ * @param {Function} callback The function that gets called for every array
+ * item.
+ * @returns {Array} A new array of values returned by the callback function.
+ */
+
+/**
+ * A generic error utility function.
+ * @private
+ * @param {String} type The error type.
+ * @returns {Error} Throws a `RangeError` with the applicable error message.
+ */
+
+/**
+ * A simple `Array#map`-like wrapper to work with domain name strings or email
+ * addresses.
+ * @private
+ * @param {String} domain The domain name or email address.
+ * @param {Function} callback The function that gets called for every
+ * character.
+ * @returns {Array} A new string of characters returned by the callback
+ * function.
+ */
+
+/**
+ * Converts a basic code point into a digit/integer.
+ * @see `digitToBasic()`
+ * @private
+ * @param {Number} codePoint The basic numeric code point value.
+ * @returns {Number} The numeric value of a basic code point (for use in
+ * representing integers) in the range `0` to `base - 1`, or `base` if
+ * the code point does not represent a value.
+ */
+
+/**
+ * Creates a string based on an array of numeric code points.
+ * @see `punycode.ucs2.decode`
+ * @memberOf punycode.ucs2
+ * @name encode
+ * @param {Array} codePoints The array of numeric code points.
+ * @returns {String} The new Unicode string (UCS-2).
+ */
+
+/**
+ * Creates an array containing the numeric code points of each Unicode
+ * character in the string. While JavaScript uses UCS-2 internally,
+ * this function will convert a pair of surrogate halves (each of which
+ * UCS-2 exposes as separate characters) into a single code point,
+ * matching UTF-16.
+ * @see `punycode.ucs2.encode`
+ * @see <https://mathiasbynens.be/notes/javascript-encoding>
+ * @memberOf punycode.ucs2
+ * @name decode
+ * @param {String} string The Unicode input string (UCS-2).
+ * @returns {Array} The new array of code points.
+ */
+
 /** @license URI.js v4.4.1 (c) 2011 Gary Court. License: http://github.com/garycourt/uri-js */
+
+/************************************************************************/
+
+/******/
+
+/***/
+
+/*--------------------------------------------------------------------------*/
+
+//
+
+//                           6( h16 ":" ) ls32
+
+//                      "::" 5( h16 ":" ) ls32
+
+//  - it is non-writable and its value is changed
+
+//  - one its descriptors is changed
+
+//  0..25 map to ASCII a..z or A..Z
+
+//  Validate schema against its meta-schema
+
+// "globals"
+
+// ## Build Metadata
+
+// ## Build Metadata Identifier
+
+// ## Full Version String
+
+// ## Main Version
+
+// ## Non-numeric Identifier
+
+// ## Numeric Identifier
+
+// ## Pre-release Version
+
+// ## Pre-release Version Identifier
+
+// (`key` that was passed to `addSchema` or full schema reference - `schema.$id` or resolved id)
+
+// (even though to the same directory), so we fall back to non atomic write
+
+// (opts.useDefaults === "empty" ? ` || ${childData} === null || ${childData} === ""` : "")
+
+// (same names that were returned by gen.scopeName or gen.scopeValue)
+
+// 1.0.0 'pre' would become 1.0.0-0 which is the wrong direction.
+
+// 1.0.0-5 bumps to 1.0.0
+
+// 1.1.0 bumps to 2.0.0
+
+// 1.2.0 patches to 1.2.1
+
+// 1.2.0-5 bumps to 1.2.0
+
+// 1.2.0-5 patches to 1.2.0
+
+// 1.2.0-beta.1 bumps to 1.2.0-beta.2,
+
+// 1.2.0-beta.fooblz or 1.2.0-beta bumps to 1.2.0-beta.0
+
+// 1.2.1 bumps to 1.3.0
+
+// 26..35 map to ASCII 0..9
+
+// <=0.7.x is actually <0.8.0, since any 0.7.x should
+
+// >1 => >=2.0.0
+
+// >1.2 => >=1.3.0
+
+// >=0.0.0 is like a star
+
+// A linked list to keep track of recently-used-ness
+
+// A main version, followed optionally by a pre-release version and
+
+// A numeric identifier, or a non-numeric identifier.
+
+// A previous serialized cache has the most recent items first
+
+// A simple gt/lt/eq thing, or just "" to indicate "any version"
+
+// A single `0`, or a non-zero digit followed by zero or more digits.
+
+// Active queue not under preassure, executing immediately
+
+// Add format
+
+// Add schema that will be used to validate other schemas
+
+// Add suffix to prevent possible conflict with native apps
+
+// Adds schema to the instance
+
+// All non-basic code points < n have been handled already. Find the next
+
+// An expression to strip any whitespace between the gtlt and the thing
+
+// Any combination of digits, letters, or hyphens.
+
+// At this point, the range is completely trimmed and
+
+// Avoid `split(regex)` for IE8 compatibility. See #17.
+
+// C-type double
+
+// C-type float
+
+// CONCATENATED MODULE: ./mainProcess/connectStorage.ts
+
+// Can't use `require` because of Webpack being annoying:
+
+// Caret ranges.
+
+// Check if an initialization vector has been used to encrypt the data
+
+// Check if module is in cache
+
+// Clone to avoid manipulating the comparator's semver object.
+
+// Coercion.
+
+// Collision found, try again
+
+// Compiles schema in SchemaEnv
+
+// Convert the input in UCS-2 to an array of Unicode code points.
+
+// Create a new module (and put it into the cache)
+
+// Data/config/cache/log are invented by me as Windows isn't opinionated about this
+
+// Decode a generalized variable-length integer into `delta`,
+
+// Determine if version is greater than all the versions possible in the range.
+
+// Determine if version is less than all the versions possible in the range
+
+// Don't use UCS-2.
+
+// EXTERNAL MODULE: external "electron"
+
+// Each Hit object has a reference to its Yallist.Node.  This
+
+// Eg, '1.2.3.4' wants to coerce '2.3.4', not '3.4' or '4'
+
+// Eg, >1.0.0 <1.0.1 is still a subset of <2.0.0
+
+// Ensure `to.toString.toString` is non-enumerable and has the same `same`
+
+// Ensure the directory exists as it could have been deleted in the meantime.
+
+// Ensuring purgeable temp files are purged on exit
+
+// Even if schema is referenced by other schemas it still can be removed as other schemas have local references.
+
+// Execute the module function
+
+// Extract anything that could conceivably be a part of a valid semver
+
+// Find the right-most coercible string that does not share
+
+// Find the set of versions that are allowed to have prereleases
+
+// Finish the basic string with a delimiter unless it's empty.
+
+// First, split based on boolean or ||
+
+// Fix for https://github.com/sindresorhus/electron-store/issues/106
+
+// Flag the module as loaded
+
+// For CommonJS default export support
+
+// For example, ^1.2.3-pr.1 desugars to >=1.2.3-pr.1 <2.0.0
+
+// For test cases: https://mathiasbynens.be/demo/url-regex
+
+// For the source: https://gist.github.com/dperini/729294
+
+// From now on, variable terms are as if we're in "gtr" mode.
+
+// Get compiled schema by `key` or `ref`.
+
+// However, `1.2.4-alpha.notready` should NOT be allowed,
+
+// Hyphen, followed by one or more dot-separated pre-release version
+
+// If RegExp is passed all schemas with key/id matching pattern but meta-schemas are removed.
+
+// If array is passed, `key` will be ignored
+
+// If it is a pre-release it will bump up to the same patch version.
+
+// If it satisfies the range it is not outside
+
+// If no parameter is passed all schemas but meta-schemas are removed.
+
+// If the edge version comparator has a operator then our version
+
+// If the input is a non-prerelease version, this acts the same as
+
+// If the lowest version comparator has an operator and our version
+
+// If the original range is shorter than the simplified one, return that.
+
+// If this is a pre-major version, bump up to the same major version.
+
+// If this is a pre-minor version, bump up to the same minor version.
+
+// If this is already a prerelease, it will bump to the next version
+
+// If this is not a pre-release version, it will increment the patch.
+
+// If we are in the renderer process, we communicate with the main process
+
+// In email addresses, only the domain name should be punycoded. Leave
+
+// Increase `delta` enough to advance the decoder's <n,i> state to <m,0>,
+
+// Index of schema compilation in the currently compiled list
+
+// Insert `n` at position `i` of the output.
+
+// It's a high surrogate, and there is a next character.
+
+// It's an unmatched surrogate; only append this code unit, in case the
+
+// JSON and javascript max Int is 2**53, so any int that passes isInteger is valid for Int64
+
+// JSON-pointer: https://tools.ietf.org/html/rfc6901
+
+// JTD serialize/parse name for JSON string and position
+
+// Kind of weird to have a default max of Infinity, but oh well.
+
+// Legacy support for v0.3.1 and earlier.
+
+// Load entry module and return exports
+
+// Low surrogate.
+
+// Main decoding loop: start just after the last delimiter if any basic code
+
+// Main encoding loop:
+
+// Manually set the index so as to pick up overlapping matches.
+
+// Meaning is "at least and backwards compatible with"
+
+// Meaning is "reasonably at or greater than"
+
+// Mostly just for testing and legacy API reasons
+
+// NOT having a prerelease is > having one
+
+// Not necessarily the package version of this code.
+
+// Note that "x.x" is a valid xRange identifer, meaning "any version"
+
+// Note that the only major, minor, patch, and pre-release sections of
+
+// Note that these all use the loose form, because they'll be
+
+// Note: This trick won't work with ESM or inside a webworker
+
+// Note: this is the semver.org version of the spec that it implements
+
+// On Linux and Windows, writing to the config file emits a `rename` event, so we skip checking the event type.
+
+// Only the first item is strictly required.
+
+// Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
+
+// Otherwise increment major.
+
+// Otherwise increment minor.
+
+// Plus sign, followed by one or more period-separated build metadata
+
+// Prevent caching of this module so module.parent is always accurate.
+
+// Remove cached schema(s).
+
+// Remove keyword
+
+// Represent delta as a generalized variable-length integer.
+
+// Resolve schema, its root and baseId
+
+// Return '*' instead of '' so that truthiness works.
+
+// Return the exports of the module
+
+// See https://github.com/sindresorhus/conf/pull/82
+
+// Set up the `ipcMain` handler for communication between renderer and main process.
+
+// Something like "2.*" or "1.2.x".
+
+// Something like `1.2.3 - 1.2.4`
+
+// Sometimes on Windows, we will get an EXDEV error when atomic writing
+
+// Star ranges basically just allow anything at all.
+
+// Start all the promises concurrently with optional limit
+
+// Stop when we get a match that ends at the string end, since no
+
+// TODO PREVENT_SCOPE_CHANGE could be defined in keyword def?
+
+// TODO `Object.keys(root.schema).length > 0` should not be needed - but removing breaks 2 tests
+
+// TODO add tests
+
+// TODO assign unevaluated
+
+// TODO atm it is allowed to overwrite schemas without id (instead of not adding them)
+
+// TODO change to reference
+
+// TODO do not allow arrays here
+
+// TODO if getFullPath removed 1 tests fails
+
+// TODO make it "ok" call?
+
+// TODO maybe an option instead of hard-coded 8?
+
+// TODO maybe localRefs should hold SchemaEnv
+
+// TODO maybe some hook to execute it in the end to check whether props/items are Name, as in assignEvaluated
+
+// TODO maybe some other interface should be used for non-keyword validation errors...
+
+// TODO maybe use global escapePointer
+
+// TODO possibly fail straight away (with warning or exception) if there are two empty always valid schemas
+
+// TODO refactor
+
+// TODO refactor - remove compilations
+
+// TODO refactor to use Set
+
+// TODO regexp should be wrapped in try/catchs
+
+// TODO return type should be Ajv
+
+// TODO returns AnySchemaObject (if the schema can be inlined) or validation function
+
+// TODO simplify
+
+// TODO tagged
+
+// TODO tests fail without this line
+
+// TODO use gen.property
+
+// TODO value.code for standalone
+
+// TODO var
+
+// TODO will not work with async, it has to be returned with the result
+
+// TODO: Remove this for the next major release
+
+// TODO: remove this in the next major version
+
+// Temporary workaround for Conf being packaged in a Ubuntu Snap app.
+
+// That should allow `1.2.3-pr.2` to pass.
+
+// The following Regular Expressions can be used for tokenizing,
+
+// The input can also be a promise, so we `Promise.all()` them both
+
+// The input can also be a promise, so we `Promise.resolve()` it
+
+// The module cache
+
+// The require function
+
+// This probably shouldn't be used publicly.
+
+// This will throw if it's invalid anyway
+
+// Three dot-separated numeric identifiers.
+
+// Tilde ranges.
+
+// UNLESS it was limited by another range in the other direction.
+
+// Version has a -pre, but it's not one of the ones we like.
+
+// Walk through the string checking with a /g regexp
+
+// We know that we're about to delete this one, and also
+
+// With option `ownProperties` replaced with a `for-of` loop for object keys
+
+// Zero or more digits, followed by a letter or hyphen, and then zero or
+
+// `${childData} === undefined` +
+
+// `+=` code
+
+// `1.2.3 - 1.2.4` => `>=1.2.3 <=1.2.4`
+
+// `> 1.2.3 < 1.2.5` => `>1.2.3 <1.2.5`
+
+// `Function#arguments` and `Function#caller` should not be copied. They were reported to be present in `Reflect.ownKeys` for some devices in React Native (#41), so we explicitly ignore them here.
+
+// `Function#length` should reflect the parameters of `to` not `from` since we keep its body.
+
+// `Function#prototype` is non-writable and non-configurable so can never be modified.
+
+// `Object.defineProperty()` throws if the property exists, is not configurable and either:
+
+// `^ 1.2.3` => `^1.2.3`
+
+// `basicLength` is the number of basic code points.
+
+// `break` statement
+
+// `const` declaration (`var` in es5 mode)
+
+// `else if` clause - invalid without `if` or after `else` clauses
+
+// `else` clause - only valid after `if` or `else if` clauses
+
+// `for-in` statement.
+
+// `for-of` statement (in es5 mode replace with a normal for loop)
+
+// `for` statement for a range of values
+
+// `function` heading (or definition if funcBody is passed)
+
+// `handledCPCount` is the number of code points that have been handled;
+
+// `i` was supposed to wrap around from `out` to `0`,
+
+// `if` clause (or statement if `thenBody` and, optionally, `elseBody` are passed)
+
+// `index` is the index of the next character to be consumed.
+
+// `label` statement
+
+// `let` declaration with optional assignment (`var` in es5 mode)
+
+// `object` is either `undefined` or `null` so we want to stop the loop, and
+
+// `return` statement
+
+// `throw` statement
+
+// `try` statement
+
+// `var` declaration with optional assignment
+
+// `~ 1.2.3` => `~1.2.3`
+
+// a complex range should be ignored.  so if we saw a non-null range,
+
+// a generic `for` clause (or statement if `forBody` is passed)
+
+// a terminus with a more left-ward coercible string.
+
+// abort out of the list early if we hit a cycle
+
+// add "vocabulary" - a collection of keywords
+
+// add if support for Symbol.iterator is present
+
+// also, 1.0.0alpha1 (prerelease without the hyphen) which is pretty
+
+// also, don't include the same comparator more than once
+
+// any
+
+// appends passed SafeExpr to code or executes Block
+
+// args passed from referencing schema
+
+// array
+
+// assignment code
+
+// boolean AND (&&) expression with the passed arguments
+
+// boolean OR (||) expression with the passed arguments
+
+// build metadata.
+
+// but guard against overflow.
+
+// but note that everything is flipped for the "ltr" function.
+
+// but we want `get({foo: null}, 'foo.bar')` to equal `undefined`, or the supplied value, not `null`
+
+// byte: https://github.com/miguelmota/is-base64
+
+// cache is a Map (or PseudoMap) that matches the keys to
+
+// can short-circuit if `unevaluatedProperties/Items` not supported (opts.unevaluated !== true)
+
+// can short-circuit if `unevaluatedProperties` is not supported (opts.next === false)
+
+// capturing group, because it should not ever be used in version
+
+// checked against either the strict or loose comparator form
+
+// coercible string can be more right-ward without the same terminus.
+
+// common in the npm registry.
+
+// compare(max, v, true)
+
+// compare(min, v, true)
+
+// comparison.
+
+// console.log("\n\n\n *** \n", sourceCode)
+
+// console.log("\n\n\n *** \n", sourceCode, this.opts)
+
+// console.log((codeSize += sourceCode.length), (nodeCount += gen.nodeCount))
+
+// const bdt = bad$DataType(schemaCode, <string>def.schemaType, $data)
+
+// date-time: http://tools.ietf.org/html/rfc3339#section-5.6
+
+// date: http://tools.ietf.org/html/rfc3339#section-5.6
+
+// define getter functions for harmony exports
+
+// didn't increment anything
+
+// dispose of the old one before overwriting
+
+// do not edit .js files directly - edit src/index.jst
+
+// don't run into trouble passing this.options around.
+
+// dont add already expired items
+
+// down to pre-release. premajor and prepatch work the same way.
+
+// drop any prereleases that might already exist, since they are not
+
+// duration: https://tools.ietf.org/html/rfc3339#appendix-A
+
+// else is ignored here
+
+// email (sources from jsen validator):
+
+// end `for` loop
+
+// end `if` statement (needed if gen.if was used only with condition)
+
+// end function definition
+
+// end the current self-balancing block
+
+// eslint-disable-next-line @typescript-eslint/no-dynamic-delete
+
+// eslint-disable-next-line @typescript-eslint/unbound-method
+
+// eslint-disable-next-line complexity
+
+// eslint-disable-next-line no-constant-condition
+
+// eslint-disable-next-line unicorn/no-for-loop
+
+// even though it's within the range set by the comparators.
+
+// even though resolution failed we need to return SchemaEnv to throw exception
+
+// exception: <1.2.3-0 is the same as <1.2.3
+
+// expose the module cache
+
+// first segment is an empty string
+
+// full-date from http://tools.ietf.org/html/rfc3339#section-5.6
+
+// function scoped variables
+
+// gen.optimize(1)
+
+// getDefaultExport function for compatibility with non-harmony modules
+
+// given a set of versions and a range, create a "simplified" range
+
+// go ahead and set it now.
+
+// hash of items by key
+
+// high surrogate, and there is a next character
+
+// hint to the UI to hide input strings
+
+// hoisted class for cyclic dependency
+
+// http://jmrware.com/articles/2009/uri_regexp/URI_regex.html + optional protocol + required "."
+
+// http://stackoverflow.com/questions/201323/using-a-regular-expression-to-validate-an-email-address#answer-8829363
+
+// http://tools.ietf.org/html/rfc3339#section-5.6
+
+// http://www.w3.org/TR/html5/forms.html#valid-e-mail-address (search for 'wilful violation')
+
+// https://github.com/ajv-validator/ajv/issues/889
+
+// https://github.com/bestiejs/punycode.js - punycode.ucs2.decode
+
+// https://github.com/webpack/webpack/issues/196
+
+// https://mathiasbynens.be/notes/javascript-encoding
+
+// https://tools.ietf.org/html/rfc3339#appendix-C
+
+// https://wiki.debian.org/XDGBaseDirectorySpecification#state
+
+// identifiers.
+
+// if ANY of the sets match ALL of its comparators, then pass
+
+// if any comparators are the null set, then replace with JUST null set
+
+// if it did't return `undefined`
+
+// if it literally is just '>' or '' then allow anything.
+
+// if it's not a basic code point
+
+// if more than one comparator, remove any * comparators
+
+// if the subset has a prerelease, we need a comparator in the superset
+
+// if there was a < or >, and nothing in the dom, then must be false
+
+// if this is not the last bit of the path, and
+
+// if we have any that are *, then the range is just *
+
+// if we have any that are not the null set, throw out null sets.
+
+// if we increase `i` as we go, then subtract off its starting
+
+// if we're including prereleases in the match, then we need
+
+// in loose mode, but will still throw if the WHOLE range is invalid.
+
+// in loose mode, throw out any that are not valid comparators
+
+// incrementing `n` each time, so we'll fix that now:
+
+// information about the root schema for the current schema
+
+// is less than it then it isn't higher than the range
+
+// isn't outside it
+
+// it modifies, so that `> 1.2.3` ==> `>1.2.3`
+
+// it would return `null` if `object` is `null`
+
+// item, and the tail is the oldest.  the list contains the Hit
+
+// iterating backwards improves 1-pass optimization
+
+// just pre-load all the stuff that index.js lazily exports
+
+// just put it in the set and return
+
+// keep the first one, in case they're all null sets
+
+// key, ref or schema object
+
+// larger one:
+
+// later.
+
+// leave it in a clean state
+
+// let codeSize = 0
+
+// let nodeCount = 0
+
+// let path
+
+// like full, but allows v1.2.3 and =1.2.3, which people do sometimes.
+
+// list of items in order of use recency
+
+// lruList is a yallist where the head is the youngest
+
+// may be undefined
+
+// memoize range parsing for performance.
+
+// module cache are used so entry inlining is disabled
+
+// more letters, digits, or hyphens.
+
+// never changes.
+
+// next code unit is the high surrogate of a surrogate pair.
+
+// normalize spaces
+
+// not inherited
+
+// nothing is allowed
+
+// number
+
+// numberify any prerelease numeric ids
+
+// obj with keys in a consistent order.
+
+// object
+
+// objects as the entries.
+
+// optimized https://www.safaribooksonline.com/library/view/regular-expressions-cookbook/9780596802837/ch07s16.html
+
+// optional array of validation errors
+
+// options in META_IGNORE_OPTIONS are alway set to false
+
+// or if all properties and items were evaluated (it.props === true && it.items === true)
+
+// or if all properties were evaluated (props === true)
+
+// oversized objects fall out of cache automatically.
+
+// parse out just the options we care about so we always get a consistent
+
+// pass.  Similarly, <=7.x is actually <8.0.0, etc.
+
+// points were copied; start at the beginning otherwise.
+
+// preminor will bump the version up to the next minor release, and immediately
+
+// prepatch.
+
+// ready to be split into comparators.
+
+// relative JSON-pointer: http://tools.ietf.org/html/draft-luff-relative-json-pointer-00
+
+// relevant at this point.
+
+// replace X with 0
+
+// replaceable if used once?
+
+// reserves unique name in the external scope
+
+// reserves unique name in the external scope and assigns value to it
+
+// reset the cache
+
+// resize the cache when the lengthCalculator changes.
+
+// resize the cache when the max changes.
+
+// resolve and compile the references ($ref)
+
+// return code that assigns values in the external scope to the names that are used internally
+
+// returns code for object literal for the passed argument list of key-value pairs
+
+// returns unique name in the internal scope
+
+// root object with properties schema, refs TODO below SchemaEnv is assigned to it
+
+// satisfies(v, range, options)
+
+// schema compilation - generates validation function, subschemaCode (below) is used for subschemas
+
+// schema compilation - this function is used recursively to generate code for sub-schemas
+
+// schema key
+
+// signed 32 bit integer
+
+// signed 64 bit integer
+
+// so that compileAsync loads missing schema.
+
+// split out into 2 ifs for better coverage tracking
+
+// start self-balancing block
+
+// startup
+
+// string
+
+// that includes the same versions that the original range does
+
+// the Yallist.Node object.
+
+// the following formats are used by the openapi specification: https://spec.openapis.org/oas/v3.0.0#data-types
+
+// the item was created without expiration in a non aged cache
+
+// the local part (i.e. everything up to `@`) intact.
+
+// the null set is a subset of everything, but null simple ranges in
+
+// the version string are capturing groups.  The build metadata is not a
+
+// then it is a subset.
+
+// then we know this isn't a subset, but if EVERY simple range was null,
+
+// these are actually numbers
+
+// this branch will be removed by gen.optimize
+
+// this generally means that it was not a valid range, which is allowed
+
+// this is a very hot path, and fully deterministic.
+
+// this isn't actually relevant for versions, but keep it so that we
+
+// throw out any comparator lists that are empty
+
+// to fix this to -0, the lowest possible prerelease value
+
+// to get the required data for the module otherwise, we pull from the main process.
+
+// true if both NaN, false otherwise
+
+// true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
+
+// unchecked string payload
+
+// uri fragment: https://tools.ietf.org/html/rfc3986#appendix-A
+
+// uri-template: https://tools.ietf.org/html/rfc6570
+
+// uri: https://github.com/mafintosh/is-my-json-valid/blob/master/formats.js
+
+// uuid: http://tools.ietf.org/html/rfc4122
+
+// validating, and parsing SemVer version strings.
+
+// validation function arguments
+
+// value at the end to obtain `delta`.
+
+// we know patch is an x, because we have any x at all.
+
+// webpackBootstrap
+
+// what the next least recently used key will be, so just
+
+// which gets added to `i`. The overflow checking is easier
+
+// will iterate one or zero times
+
+// with the same tuple and a prerelease, or it's not a subset
+
+// ~1.2 == >=1.2.0 <1.3.0-0
+
+// ~1.2.3 == >=1.2.3 <1.3.0-0
+
+//# sourceMappingURL=additionalItems.js.map
+
+//# sourceMappingURL=additionalProperties.js.map
+
+//# sourceMappingURL=ajv.js.map
+
+//# sourceMappingURL=allOf.js.map
+
+//# sourceMappingURL=anyOf.js.map
+
+//# sourceMappingURL=applicability.js.map
+
+//# sourceMappingURL=boolSchema.js.map
+
+//# sourceMappingURL=code.js.map
+
+//# sourceMappingURL=const.js.map
+
+//# sourceMappingURL=contains.js.map
+
+//# sourceMappingURL=core.js.map
+
+//# sourceMappingURL=dataType.js.map
+
+//# sourceMappingURL=defaults.js.map
+
+//# sourceMappingURL=dependencies.js.map
+
+//# sourceMappingURL=draft7.js.map
+
+//# sourceMappingURL=enum.js.map
+
+//# sourceMappingURL=equal.js.map
+
+//# sourceMappingURL=errors.js.map
+
+//# sourceMappingURL=format.js.map
+
+//# sourceMappingURL=formats.js.map
+
+//# sourceMappingURL=id.js.map
+
+//# sourceMappingURL=if.js.map
+
+//# sourceMappingURL=index.js.map
+
+//# sourceMappingURL=items.js.map
+
+//# sourceMappingURL=items2020.js.map
+
+//# sourceMappingURL=keyword.js.map
+
+//# sourceMappingURL=limit.js.map
+
+//# sourceMappingURL=limitItems.js.map
+
+//# sourceMappingURL=limitLength.js.map
+
+//# sourceMappingURL=limitNumber.js.map
+
+//# sourceMappingURL=limitProperties.js.map
+
+//# sourceMappingURL=metadata.js.map
+
+//# sourceMappingURL=multipleOf.js.map
+
+//# sourceMappingURL=names.js.map
+
+//# sourceMappingURL=not.js.map
+
+//# sourceMappingURL=oneOf.js.map
+
+//# sourceMappingURL=pattern.js.map
+
+//# sourceMappingURL=patternProperties.js.map
+
+//# sourceMappingURL=prefixItems.js.map
+
+//# sourceMappingURL=properties.js.map
+
+//# sourceMappingURL=propertyNames.js.map
+
+//# sourceMappingURL=ref.js.map
+
+//# sourceMappingURL=ref_error.js.map
+
+//# sourceMappingURL=required.js.map
+
+//# sourceMappingURL=resolve.js.map
+
+//# sourceMappingURL=rules.js.map
+
+//# sourceMappingURL=scope.js.map
+
+//# sourceMappingURL=subschema.js.map
+
+//# sourceMappingURL=thenElse.js.map
+
+//# sourceMappingURL=types.js.map
+
+//# sourceMappingURL=ucs2length.js.map
+
+//# sourceMappingURL=uniqueItems.js.map
+
+//# sourceMappingURL=uri.all.js.map
+
+//# sourceMappingURL=util.js.map
+
+//# sourceMappingURL=validation_error.js.map
+
+//FIXME: No truncable part detected, can't really do much without also changing the parent path, which is unsafe, hoping for the best here
+
+//FIXME: Rough and quick attempt at detecting ok lengths
+
+//FIXME: The truncable part might be shorter than needed here
+
+//FIXME: The type castings here aren't exactly correct
+
+//IE FIX for improper RegExp matching
+
+//NOTE: We do not parse query strings for HTTP URIs
+
+//RFC 6455
+
+//RFC 6874
+
+//RFC 6874, with relaxed parsing rules
+
+//TODO: Maybe publish this as a standalone package
+
+//TODO: fetch the real limit from the filesystem
+
+//TODO: fetch the real limit from the filesystem //TODO: fetch the whole-path length limit too
+
+//[               h16 ] "::" 4( h16 ":" ) ls32
+
+//[ *1( h16 ":" ) h16 ] "::" 3( h16 ":" ) ls32
+
+//[ *2( h16 ":" ) h16 ] "::" 2( h16 ":" ) ls32
+
+//[ *3( h16 ":" ) h16 ] "::"    h16 ":"   ls32
+
+//[ *4( h16 ":" ) h16 ] "::"              ls32
+
+//[ *5( h16 ":" ) h16 ] "::"              h16
+
+//[ *6( h16 ":" ) h16 ] "::"
+
+//and not the HTTP spec.
+
+//as WWW Form Url Encoded query strings are part of the HTML4+ spec,
+
+//check for reference errors
+
+//check if scheme can't handle IRIs
+
+//construct resouce name
+
+//convert IDN via punycode
+
+//convert IRI -> URI
+
+//convert Unicode IDN -> ASCII IDN
+
+//determine reference type
+
+//ensure scheme matches secure flag
+
+//find scheme handler
+
+//fix port number
+
+//forbid fragment component
+
+//if host component is a domain name
+
+//if host component is an IPv6 address
+
+//indicate if the secure flag is set
+
+//merge tokens into a string
+
+//normalize IP hosts
+
+//normalize IP hosts, add brackets and escape zone separator for IPv6
+
+//normalize UUID
+
+//normalize base components
+
+//normalize encoding
+
+//normalize encodings
+
+//normalize the default port
+
+//normalize the empty path
+
+//perform scheme specific parsing
+
+//perform scheme specific serialization
+
+//reconstruct path from resource name
+
+//relaxed parsing rules
+
+//report missing host
+
+//simplified
+
+//store each component
+
+//store.reset("presets");
+
+//subset
+
+//subset, excludes bidi control characters
+
+//target.authority = base.authority;
+
+//target.authority = relative.authority;
