@@ -1,5 +1,5 @@
 "use strict";
-const mode = "development";
+const mode = "production";
 const TerserPlugin = require("terser-webpack-plugin");
 const enabledSourceMap = mode === "development";
 const path = require("path");
@@ -12,7 +12,6 @@ module.exports = [{
     externals: {
       fsevents:"require('fsevents')"
     },
-    /*
     optimization:{
       minimize: !enabledSourceMap,
       minimizer:[
@@ -26,7 +25,6 @@ module.exports = [{
           }),
       ],
     },
-    */
     target: "electron-renderer",
     // メインとなるJavaScriptファイル（エントリーポイント）
     entry: "./src/js/main.tsx",
