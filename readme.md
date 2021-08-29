@@ -1,6 +1,6 @@
 # Electron rename app RenameNote
 
-[Japanese explanation is here](https://kawano-shuji.com/justdiary)
+[Japanese explanation is here](https://kawano-shuji.com/justdiary/2021/08/30/electron%e8%a3%bd%e3%83%aa%e3%83%8d%e3%83%bc%e3%83%a0%e3%82%bd%e3%83%95%e3%83%88/)
 
 this app renames a lot of file through regexp  
 write regexp and replace word , and drag and drop files you want to rename , and than it renames a lot of file.  
