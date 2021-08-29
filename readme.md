@@ -45,3 +45,11 @@ even you can package it
 ```
  npm run pack
 ```
+## **warning**
+
+it was developed on Mac OS. it might not work on Windows.
+in case , please try it below
+
+```
+npm i -f
+```
